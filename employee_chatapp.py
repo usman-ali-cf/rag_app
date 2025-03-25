@@ -7,8 +7,8 @@ import requests
 dotenv.load_dotenv()
 
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
-APPLICATION_TOKEN = os.getenv("langflow_token")
-LANGFLOW_ID = os.getenv("LANGFLOW_ID")
+APPLICATION_TOKEN = st.secrets["langflow_token"]
+LANGFLOW_ID = st.secrets["LANGFLOW_ID"]
 FLOW_ID = "46c21089-c9cb-4337-a0d8-aa6497766063"
 ENDPOINT = "emp_chat"
 
